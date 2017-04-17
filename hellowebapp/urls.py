@@ -19,7 +19,7 @@ from django.views.generic import TemplateView
 from collection import views
 
 urlpatterns = [
-    url(r'^', views.index, name='home'),
+    url(r'^$', views.index, name='home'),
     url(r'^about/$',
         TemplateView.as_view(template_name='about.html'), name='about'),
     url(r'contact/$',
